@@ -3,7 +3,8 @@
 from unittest import TestCase, main
 from levenshtein import levenshtein
 
-class TestPermutation(TestCase):
+
+class TestLevenshtein(TestCase):
     """ Test class for testing a Levenshtein distance algorithm. """
 
     def test_levenshtein(self):
