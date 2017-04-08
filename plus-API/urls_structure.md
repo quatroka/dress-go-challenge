@@ -14,6 +14,7 @@ Example usage:
     curl -H "Content-Type: application/json" -X POST -d '{ "place": "Dress & Go" }' http://localhost:5000/api/places
 
 Success 200
+
 | Field           | Type   | Description              |
 | --------------- | ------ | ------------------------ |
 | _id             | Int    | Database Place Id.       |
@@ -36,11 +37,13 @@ Example usage:
     curl -H "Content-Type: application/json" -X DELETE http://localhost:5000/api/places/[id]
 
 Parameter
+
 | Field | Type    | Description |
 | ----- | ------- | ----------- |
 | id    | Integer | Place's ID. |
 
 204
+
 | Field | Description |
 | ----- | ----------- |
 | body  | No Content. |
@@ -59,6 +62,7 @@ Example usage:
     curl -H "Content-Type: application/json" -X DELETE http://localhost:5000/api/places/[id]
 
 Parameter
+
 | Field | Type    | Description |
 | ----- | ------- | ----------- |
 | id    | Integer | Place's ID. |
@@ -77,6 +81,7 @@ Example usage:
     curl -H "Content-Type: application/json" -X DELETE http://localhost:5000/api/places/
 
 Success 200
+
 | Field  | Type     | Description       |
 | ------ | -------- | ----------------- |
 | places | Object[] | A list of places. |
