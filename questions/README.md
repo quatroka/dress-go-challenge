@@ -1,6 +1,6 @@
 # Answers to the questions
 
-[Answers](https://github.com/quatroka/atualizador/blob/master/questions/questions.md)
+[Answers](https://github.com/quatroka/dress-go-challenge/blob/master/questions/questions.md)
 
 
 # Levenshtein distance algorithm problem
