@@ -5,7 +5,7 @@ import sqlite3
 CONN = sqlite3.connect('places.db')
 CURSOR = CONN.cursor()
 
-CURSOR.execute('CREATE TABLE places( id INT PRIMARY KEY NOT NULL, \
+CURSOR.execute('CREATE TABLE places( id INTEGER PRIMARY KEY AUTOINCREMENT, \
                                      local_name CHAR(100) NOT NULL, \
                                      full_address  CHAR(500) NOT NULL,\
                                      latitude REAL NOT NULL, \

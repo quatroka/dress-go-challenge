@@ -11,7 +11,7 @@ Create a place on system.
     
 Example usage:
 
-    curl -H "Content-Type: application/json" -X POST -d '{ "place": "Dress & Go" }' http://localhost:5000/api/places/
+    curl -H "Content-Type: application/json" -X POST -d '{ "place": "Dress & Go" }' http://localhost:5000/api/places
 
 Success 200
 | Field           | Type   | Description              |

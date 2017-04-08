@@ -17,6 +17,5 @@ class TestGoogleMaps(TestCase):
         self.assertEqual(-46.6764695, data['results'][0]['geometry']['location']['lng'])
 
 
-
 if __name__ == '__main__':
     main()
