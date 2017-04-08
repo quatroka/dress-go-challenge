@@ -1,13 +1,13 @@
 # Roadmap
 
 - [ ] Model
-    - [ ] Create table
-    - [ ] Save a place
+    - [x] Create table
+    - [x] Save a place
     - [ ] Retrive one place
     - [ ] Retrive all places
     - [ ] Delete a place
 - [ ] Controllers
-    - Format one place to save
+    - [x] Format one place to save
 - [ ] Views
     - [ ] View all places
     - [ ] View one place

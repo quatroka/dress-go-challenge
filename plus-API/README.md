@@ -16,5 +16,5 @@ Setup database:
 
 ## Extras
 
-[Roadmap]()
-[URLs Structure]()
+[Roadmap](https://github.com/quatroka/dress-go-challenge/blob/master/plus-API/roadmap.md)
+[URLs Structure](https://github.com/quatroka/dress-go-challenge/blob/master/plus-API/urls_structure.md)

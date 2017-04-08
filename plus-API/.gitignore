@@ -1,0 +1,4 @@
+access.log
+places.db
+__pycache__
+tests/__pycache__
