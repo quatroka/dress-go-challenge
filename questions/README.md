@@ -6,7 +6,7 @@
 # Levenshtein distance algorithm problem
 To execute tests:
 
-    python -m unittest *_test.py
+    python -m unittest test_*.py
 
 To execute problem solution:
 
