@@ -14,4 +14,4 @@ if __name__ == '__main__':
     handler = logging.FileHandler('access.log')
     logger.addHandler(handler)
     APP.logger.addHandler(handler)
-    APP.run(debug=True, port=5000)
+    APP.run(debug=False, port=5000)
