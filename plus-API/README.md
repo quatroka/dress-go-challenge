@@ -1,5 +1,11 @@
 # Plus-API
 
+## Dependencies
+
+* Python 3
+* Flask
+* Google Maps Services Python
+
 ## Follow the instructions to setup project
 
 Create a virtualenv(python3):
