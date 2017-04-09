@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """ Main file to start the project """
 import logging
 from flask import Flask, request, Blueprint

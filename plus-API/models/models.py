@@ -2,6 +2,7 @@
 """ Models file for all remaining methods. """
 import sqlite3
 
+
 def save_place(place):
     """ Receive a place and insert on database. """
     conn = sqlite3.connect('places.db')
@@ -64,7 +65,8 @@ def get_one_place(place):
         places['places'].append(place_modal)
 
     conn.close()
-    return places['places'][0]
+
+    return places['places']
 
 
 def delete_one_place(place):

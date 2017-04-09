@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 """ Blueprint for views of app """
 from flask import jsonify, request, Blueprint
 from controllers.places import get_place_data
-from controllers.controllers import filter_essential_data
+from controllers.controllers import filter_essential_data, is_exists
 from models.models import save_place, get_all_places, get_one_place
 from models.models import delete_one_place
 
@@ -19,14 +20,20 @@ def places_create_one():
         place = get_place_data(place)
         place = filter_essential_data(place)
         save_place(place)
-        return jsonify(place)
+        data = is_exists(place['local_name'])
+        if data is False:
+            return jsonify({'response': 'Not save.'}), 406
+        return jsonify(place), 200
 
 
 @PLACES.route('/api/places', methods=['GET'])
 def places_get_all():
     """ Receive all places in database. """
     if request.method == 'GET':
-        return jsonify(get_all_places())
+        data = get_all_places()
+        if len(data['places']) == 0:
+            return jsonify({'response': 'Not have places.'}), 404
+        return jsonify(data), 200
 
 
 @PLACES.route('/api/places/<string:place>', methods=['GET'])
@@ -37,7 +44,10 @@ def places_get_one(place):
         your data in database. """
     place = place.replace('-', ' ')
     if request.method == 'GET':
-        return jsonify(get_one_place(place))
+        data = is_exists(place)
+        if data is False:
+            return jsonify({'response': 'Place not found.'}), 404
+        return jsonify(data), 200
 
 
 @PLACES.route('/api/places/<string:place>', methods=['DELETE'])
@@ -49,4 +59,7 @@ def places_delete_one(place):
     place = place.replace('-', ' ')
     if request.method == 'DELETE':
         delete_one_place(place)
-        return jsonify({'Deleted': place})
+        data = is_exists(place)
+        if data is True:
+            return jsonify({'response': 'Not deleted.'}), 406
+        return jsonify({'response': 'Deleted.'}), 204
