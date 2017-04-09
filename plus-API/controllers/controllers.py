@@ -3,7 +3,7 @@
 
 
 def filter_essential_data(place_data):
-    """ Recieve a data and returns your essential data. """
+    """ Receive a data and returns your essential data. """
     essential_data = {}
     essential_data['local_name'] = place_data['results'][0]['name']
     essential_data['full_address'] = place_data['results'][0]['formatted_address']

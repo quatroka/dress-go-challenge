@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """ Test file for Google Places API. """
 from unittest import TestCase, main
-from places import get_place_data
+from controllers.places import get_place_data
 
 
 class TestGoogleMaps(TestCase):

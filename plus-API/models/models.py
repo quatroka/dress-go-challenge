@@ -3,7 +3,7 @@
 import sqlite3
 
 def save_place(place):
-    """ Recieve a place and insert on database. """
+    """ Receive a place and insert on database. """
     conn = sqlite3.connect('places.db')
     cursor = conn.cursor()
 

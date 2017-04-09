@@ -1,6 +1,6 @@
 # Plus-API
 
-## Follow the instructions
+## Follow the instructions to setup project
 
 Create a virtualenv(python3):
 
@@ -14,7 +14,15 @@ Setup database:
 
     python setup_database.py
 
+## To execute tests
+
+    python -m unittest discover tests
+
+## To start application
+
+    python run.py
+
 ## Extras
 
-[Roadmap](https://github.com/quatroka/dress-go-challenge/blob/master/plus-API/roadmap.md)
-[URLs Structure](https://github.com/quatroka/dress-go-challenge/blob/master/plus-API/urls_structure.md)
+[Roadmap](https://github.com/quatroka/dress-go-challenge/blob/master/plus-API/docs/roadmap.md)
+[URLs Structure](https://github.com/quatroka/dress-go-challenge/blob/master/plus-API/docs/urls_structure.md)

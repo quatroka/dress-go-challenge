@@ -3,7 +3,7 @@
 
 
 def levenshtein(seq1, seq2):
-    """ Recieve two strings and returns your Levenshtein distance. """
+    """ Receive two strings and returns your Levenshtein distance. """
     oneago = None
     thisrow = list(range(1, len(seq2) + 1))
     thisrow.append(0)
